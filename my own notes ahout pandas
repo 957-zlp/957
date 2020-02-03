@@ -1,0 +1,17 @@
+reset_index()   重置索引
+pd.concat([a,b],axis=)    将两个序列进行合并
+ser1[~ser1.isin(ser2)]    From ser1 remove items present in ser2.   ~表示取相反的值 
+np.union1d(ser1,ser2)     将ser1与ser2合并为一个，返回值为一个array，但ser1,ser2可以是series
+numpy.random.normal(loc=0.0, scale=1.0, size=None)  
+参数的意义为：loc:float  概率分布的均值，对应着整个分布的中心center  scale:float 概率分布的标准差，对应于分布的宽度，scale越大越矮胖，scale越小，越瘦高
+size:int or tuple of ints   输出的shape，默认为None，只输出一个值
+ser.value_counts()    返回每个元素出现的次数
+ser.values   返回一个有ser序列中的元素组成的数组（array）
+np.argwhere(condition)    
+ser.append(ser2)   在0轴上进行操作
+index.get_loc(a)   返回a在index中的position
+pd.Index(ser)    将ser转换为index
+str.title    首字母变大
+map(founction)  将函数作用于每一个元素
+ser.diff()  返回相邻两个元素之间的差值，第一个为NAN
+ser.tolist()   转换为列表
