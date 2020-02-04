@@ -32,4 +32,18 @@ np.isnan()   返回一串布尔值组成的数组
 
 numpy中axis的理解：将其视为执行操作的轴方向，即合并时为堆叠的方向，计算时为折叠的轴，一维数组只有横向的0轴
 
-
+np.corrcoef() 计算皮尔逊相关系数，接受的参数是一个矩阵,返回的结果也是一个矩阵  返回的矩阵结果 r[i][j] 分别为第 i 组数据和第 j 组数据的皮尔逊积矩相关系数
+np.isnan()  返回一个布尔值的矩阵
+np.any()    np.all()    返回true or false
+np.unique(b,return_index=True，return_inverse=True，return_counts=True，axis=)   对于一维数组或者列表，unique函数去除其中重复的元素，并按元素由大到小返回一个新的无重复元素的数组或者列表，
+return_index=True表示返回新列表元素在旧列表中的位置，return_inverse=True 表示返回旧列表元素在新列表中的位置
+返回去重后的新矩阵中元素在原矩阵中相应的出现次数
+arr.astype("dtype")   转换数据类型
+numpy.digitize(x, bins, right = False)参数：x : numpy数组    bins :一维单调数组，必须是升序或者降序  right：间隔是否包含最右  返回值：x在bins中的位置。
+np.newaxis   添加新的轴，可用于将一维数组转换为竖向排列，或者相反的操作
+numpy.random.choice(a, size=None, replace=True, p=None)  从a(只要是ndarray都可以，但必须是一维的)中随机抽取数字，并组成指定大小(size)的数组
+replace:True表示可以取相同数字，False表示不可以取相同数字 数组p：与数组a相对应，表示取数组a中每个元素的概率，默认为选取每个元素的概率相同。
+np.argmax(arr)   arr中数值最大的元素对应的位置
+numpy.argsort(a, axis=, kind=’quicksort’, order=None) 功能: 将矩阵a按照axis排序，并返回排序后的下标 参数: a:输入矩阵， axis:需要排序的维度
+返回值: 输出排序后的下标   此函数可用于排序(二维数组中按照某一行进行排序）或者取最大最小值
+np.sort()函数的作用是对给定的数组的元素进行排序  a：需要排序的数组  axis：指定按什么排序，默认axis = 1 按行排序， axis = 0 按列排序
