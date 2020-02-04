@@ -15,3 +15,6 @@ str.title    首字母变大
 map(founction)  将函数作用于每一个元素
 ser.diff()  返回相邻两个元素之间的差值，第一个为NAN
 ser.tolist()   转换为列表
+pd.to_datetime(ser)   转换为datetime格式
+
+
