@@ -47,3 +47,4 @@ np.argmax(arr)   arr中数值最大的元素对应的位置
 numpy.argsort(a, axis=, kind=’quicksort’, order=None) 功能: 将矩阵a按照axis排序，并返回排序后的下标 参数: a:输入矩阵， axis:需要排序的维度
 返回值: 输出排序后的下标   此函数可用于排序(二维数组中按照某一行进行排序）或者取最大最小值
 np.sort()函数的作用是对给定的数组的元素进行排序  a：需要排序的数组  axis：指定按什么排序，默认axis = 1 按行排序， axis = 0 按列排序
+ravel()  将多维数据拉平到一维
